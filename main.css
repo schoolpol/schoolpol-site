@@ -1,0 +1,172 @@
+body { margin: 0; font-family: sans-serif; }
+div#about, div#data-content {
+  padding: 0px 20px;
+  margin: auto;
+  max-width: 1000px;
+}
+
+div#about {
+  padding-bottom: 15px;
+}
+h1 {
+  padding: 5px;
+  font-size: x-large;
+  background-color: gold;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.jumbotron { display: flex; }
+.school-image {
+  background-image: url("./photo-1580582932707-520aed937b7b.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+}
+.map-image {
+  display: flex;
+  background-image: url("./uk-schoolpol-map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  min-height: 400px;
+  align-items: center;
+}
+
+.map-image p {
+  text-align: center;
+}
+
+.map-image a {
+  background-color: gold;
+  color: black;
+  padding: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.map-image a:hover {
+  background-color: goldenrod;
+}
+
+.school-image p {
+  font-weight: 500;
+  font-size: x-large;
+  padding: 20px;
+  background-color: rgb(255, 255, 255, 0.9);
+}
+nav {
+  color: silver;
+  background-color: #F7E3C2;
+  padding: 5px;
+  margin-top: 0px;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: brown;
+  padding: 4px;
+}
+
+nav a:hover {
+  background: goldenrod;
+}
+#about ol {
+  list-style: none;
+  counter-reset: li;
+  font-size: large;
+  font-weight: 500;
+}
+
+#about p {
+  line-height: 1.5;
+}
+#about li::before {
+  content: counter(li);
+  color: brown;
+  display: inline-block;
+  width: 1em;
+  text-align: center;
+  border-radius: 100%;
+  margin-right: 10px;
+  padding: 5px;
+  justify-content: space-around;
+  background-color: #F7E3C2;
+  margin-left: -1em;
+}
+#about li {
+  counter-increment: li;
+  margin-bottom: 10px;
+}
+
+/* --------------- DATA section styles ------------------- */
+div#data {
+  width: 100%;
+  background: #f7e3c2;
+  padding-top: 20px;
+}
+div#data-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+div.dataset, div.dataset-blurb {
+  min-width: 400px;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+}
+
+div.dataset {
+  background-color: white;
+  text-align: center;
+}
+
+div.dataset p.download {
+  color: #444444;
+}
+div.dataset p.download a {
+    color: brown;
+    background: #f7e3c2;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+div.dataset p.download a:hover {
+  background: goldenrod;
+}
+
+
+/* --------------- FOOTER section styles ------------------- */
+
+footer {
+  background: #cecece;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+footer details {
+  font-size: small;
+}
+div.footer {
+  max-width: 1000px;
+  padding-left: 20px;
+  margin: auto;
+  display: flex;
+}
+div.footer-box {
+  width: 25%;
+}
+
+/* ------------------- section styles --------------------- */
+
+@media all and (max-width: 640px) {
+  .jumbotron { flex-direction: column; }
+  .school-image, .map-image { width: 100% }
+}
+ 
