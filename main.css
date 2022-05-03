@@ -17,7 +17,7 @@ h1 {
 }
 .jumbotron { display: flex; }
 .school-image {
-  background-image: url("./photo-1580582932707-520aed937b7b.avif");
+  background-image: url("https://raw.githubusercontent.com/schoolpol/schoolpol.github.io/main/photo-1580582932707-520aed937b7b.avif");
   background-repeat: no-repeat;
   background-size: cover;
   width: 50%;
@@ -27,7 +27,7 @@ h1 {
 }
 .map-image {
   display: flex;
-  background-image: url("./uk-schoolpol-map.png");
+  background-image: url("https://raw.githubusercontent.com/schoolpol/schoolpol.github.io/main/uk-schoolpol-map.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 50%;
