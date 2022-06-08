@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ name }} | Schoolpol</title>
+    <meta name="description" content="Schoolpol profile: {{ name }}">
+    <link rel="stylesheet" href="../main.css">
+  </head>
+<body>
+    <h1>Schoolpol: The transformation of Post-war education</h1>
+    <nav>
+        <a href="/people.html">People</a> |
+        <a href="#data">Data</a> |
+        <a href="https://map.schoolpol.org">Map</a>
+    </nav>
+    <main>
+          <h2 id="name">{{ name }}</h2>
+      <div id="people">
+          <figure>
+              <img src="{{ slug }}.jpg" alt="photo of {{ name }}">
+          </figure>
+          <div id="bio">
+              {{ bio }}
+          </div>
+      </div>
+
+      <footer>
+        <div class="footer">
+          <div class="footer-box" style="width: 40%">
+            <h3>Schoolpol</h3>
+            <p>Department of Politics and International Relations<br>
+              University of Oxford<br>
+              Manor Road Building<br>
+              Manor Road<br>
+              OX1 3UQ</p>
+            <p>tel: 01865 285950<br>
+              e-mail: schoolpol@politics.ox.ac.uk</p>
+            <details><summary>Privacy statement</summary>
+              This website is hosted on <a href="https://pages.github.com">GitHub Pages</a>. Some information may be
+              collected by GitHub, which is not accessible to the owner of this website. GitHub has its own
+              <a href="https://docs.github.com/en/github/site-policy/github-privacy-statement">privacy statement</a>
+              that you can review. <strong>This website does not use cookies</strong>
+            </details>
+
+          </div>
+          <div class="footer-box">
+            <h3>Social media</h3>
+            <p><a href="https://twitter.com/Schoolpol">@Schoolpol</a></p>
+          </div>
+          <div class="footer-box">
+            <h3>Funding</h3>
+            <p><img src="eu.jpg" alt="European Union"></p>
+            <p><img src="erc.jpg" alt="European Research Council"></p>
+          </div>
+        </div>
+      </footer>
+    </main>
+</body>
+</html>
